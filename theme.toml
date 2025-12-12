@@ -5,6 +5,7 @@ description = "A lightweight Hugo theme based on Bear Blog and Hugo Bear Blog. I
 
 # The home page of the theme, where the source can be found.
 homepage = "https://github.com/clente/hugo-bearcub"
+background = "#1f1b29"
 
 # If you have a running demo of the theme.
 demosite = "https://clente.github.io/hugo-bearcub"
