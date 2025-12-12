@@ -1,3 +1,9 @@
+Добро пожаловать на мой сайт.
+
+![Social card example](images/954aae9a4a4a9f7abf9a89cf6f2ac918.webp)
+
+
+
 # ᕦʕ •ᴥ•ʔᕤ Bear Cub
 
 [![github pages](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml)
