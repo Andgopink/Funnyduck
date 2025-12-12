@@ -10,6 +10,11 @@ background = "#1f1b29"
 # If you have a running demo of the theme.
 demosite = "https://clente.github.io/hugo-bearcub"
 
+[params]
+# Color theme.
+#   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
+color_theme = "dark"
+
 tags = ["blog", "responsive", "minimal", "personal", "dark", "multilingual"]
 features = ["favicon", "seo", "no javascript", "rss", "social cards"]
 
