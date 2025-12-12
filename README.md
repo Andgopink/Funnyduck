@@ -1,17 +1,19 @@
 Добро пожаловать на мой сайт.
+[![github pages](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml)
+[![MIT license](https://img.shields.io/github/license/clente/hugo-bearcub)](https://github.com/clente/hugo-bearcub/blob/main/LICENSE)
 
 ![Social card example](images/954aae9a4a4a9f7abf9a89cf6f2ac918.webp)
 
 
 
-# ᕦʕ •ᴥ•ʔᕤ Bear Cub
+# ᕦʕ •ᴥ•ʔᕤ Duck Club
 
 [![github pages](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/clente/hugo-bearcub)](https://github.com/clente/hugo-bearcub/blob/main/LICENSE)
 
 ## Overview
 
-🐻 A lightweight [Hugo](https://gohugo.io/) theme based on [Bear
+ A lightweight [Hugo](https://gohugo.io/) theme based on [Bear
 Blog](https://bearblog.dev) and [Hugo Bear
 Blog](https://github.com/janraasch/hugo-bearblog).
 
