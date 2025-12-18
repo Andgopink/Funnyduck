@@ -1,4 +1,89 @@
-Добро пожаловать на мой сайт.
+####Добро пожаловать на мой сайт.
+
+18.12.2005.  Сижу уставший и не выспавшийся на работе всталв 6.30 на улице холодно, надо сделать 35листов А3
+голова болит, насморк. Деньги кончились почти. зато можно сьесть печеньку с кофе.
+вот такой канун рождества 2025. 
+
+залил себе кодик на гити чаёк попивай  - протестировал, работает
+import java.time.Duration;
+import java.time.LocalTime;
+
+public class SimpleConsoleTimer {
+    public static void main(String[] args) throws InterruptedException {
+        LocalTime targetTime = LocalTime.of(18, 0, 0);
+        
+        System.out.println("=== ТАЙМЕР ДО 18:00 (электронные часы) ===\n");
+        
+        while (true) {
+            LocalTime currentTime = LocalTime.now();
+            
+            if (currentTime.isBefore(targetTime)) {
+                Duration duration = Duration.between(currentTime, targetTime);
+                long hours = duration.toHours();
+                long minutes = duration.toMinutesPart();
+                long seconds = duration.toSecondsPart();
+                
+                // Используем ANSI цвета для зеленой подсветки
+                String green = "\u001B[32m";
+                String brightGreen = "\u001B[92m";
+                String reset = "\u001B[0m";
+                
+                // Эффект мигания
+                if (System.currentTimeMillis() % 1000 < 500) {
+                    System.out.print(green + "═══════════════════════════════\n");
+                    System.out.print("  ╔═══════════════════════╗\n");
+                    System.out.print("  ║     " + 
+                        String.format("%02d:%02d:%02d", hours, minutes, seconds) + 
+                        "     ║\n");
+                    System.out.print("  ╚═══════════════════════╝\n");
+                    System.out.print("═══════════════════════════════\n" + reset);
+                } else {
+                    System.out.print(brightGreen + "═══════════════════════════════\n");
+                    System.out.print("  ╔═══════════════════════╗\n");
+                    System.out.print("  ║     " + 
+                        String.format("%02d:%02d:%02d", hours, minutes, seconds) + 
+                        "     ║\n");
+                    System.out.print("  ╚═══════════════════════╝\n");
+                    System.out.print("═══════════════════════════════\n" + reset);
+                }
+                
+            } else {
+                String red = "\u001B[31m";
+                String reset = "\u001B[0m";
+                
+                System.out.print(red + "═══════════════════════════════\n");
+                System.out.print("  ╔═══════════════════════╗\n");
+                System.out.print("  ║     18:00:00         ║\n");
+                System.out.print("  ║   ВРЕМЯ ВЫШЛО!       ║\n");
+                System.out.print("  ╚═══════════════════════╝\n");
+                System.out.print("═══════════════════════════════\n" + reset);
+            }
+            
+            // Пауза и очистка
+            Thread.sleep(1000);
+            clearConsole();
+        }
+    }
+    
+    private static void clearConsole() {
+        try {
+            if (System.getProperty("os.name").contains("Windows")) {
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            } else {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
+            }
+        } catch (Exception e) {
+            // Если не получилось очистить - просто выводим пустые строки
+            for (int i = 0; i < 10; i++) {
+                System.out.println();
+            }
+        }
+    }
+}
+
+![Social card example](images/Screenshot_634.png)
+
 
 [![github pages](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/clente/hugo-bearcub/actions/workflows/gh-pages.yml)
 [![MIT license](https://img.shields.io/github/license/clente/hugo-bearcub)](https://github.com/clente/hugo-bearcub/blob/main/LICENSE)
