@@ -6,7 +6,7 @@
 
 - ✨Magic ✨
 
-![Social card example](https://atomicbooks.com/cdn/shop/products/tankgirl2girls_1600x.jpg?v=1478499377)
+![Social card example](https://static.wikia.nocookie.net/kong/images/d/d7/51PecPJW7kL._SX348_BO1%2C204%2C203%2C200_.jpg/revision/latest?cb=20181011012839)
 
 
 18.12.2005.  Сижу уставший и не выспавшийся на работе всталв 6.30 на улице холодно, надо сделать 35листов А3
