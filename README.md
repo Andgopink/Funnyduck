@@ -6,7 +6,6 @@
 
 - ✨Magic ✨
 
-
 ![Social card example](https://github.com/Andgopink/Funnyduck/blob/ae3339becffc3c1cab07ae9f8b2ea95dbfecd0f5/images/photo_5343753075547639366_y%20(1).jpg)
 
 
