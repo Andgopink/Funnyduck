@@ -6,7 +6,7 @@
 
 - ✨Magic ✨
 
-![Social card example](https://static.wikia.nocookie.net/kong/images/d/d7/51PecPJW7kL._SX348_BO1%2C204%2C203%2C200_.jpg/revision/latest?cb=20181011012839)
+![Social card example](https://assets.bigcartel.com/product_images/244957052/A3Poster_1Frontcrop.jpg?auto=format&fit=max&w=1000)
 
 
 18.12.2005.  Сижу уставший и не выспавшийся на работе всталв 6.30 на улице холодно, надо сделать 35листов А3
