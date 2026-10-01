@@ -15,3 +15,18 @@ languageCode = "ru-ru"
     name = "News"
     url = "/news/"
     weight = 2
+    
+[[menu.main]]
+    name = "Art"
+    url = "/art/"
+    weight = 1
+
+[[menu.main]]
+    name = "Sound"
+    url = "/sound/"
+    weight = 2
+
+[[menu.main]]
+    name = "Vibe"
+    url = "/vibe/"
+    weight = 3
