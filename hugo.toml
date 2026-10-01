@@ -1,0 +1,6 @@
+baseURL = "https://github.io"
+title = "Funnyduck Blog"
+theme = "hugo-bearcub"
+
+[params]
+    color_theme = "dark"
