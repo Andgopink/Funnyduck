@@ -7,19 +7,28 @@
   {{ if eq .Site.Params.color_theme "dark" }}
     <style>
       body { background: #1f1b29; color: #f4f4f4; font-family: sans-serif; padding: 5% 10%; line-height: 1.6; }
-      a { color: #ff79c6; }
+      a { color: #ff79c6; text-decoration: none; margin-right: 15px; }
+      a:hover { text-decoration: underline; }
+      nav { margin-bottom: 30px; border-bottom: 1px solid #3a304c; padding-bottom: 10px; }
+      nav a.active { font-weight: bold; text-decoration: underline; }
+      h1, h2, h3 { color: #ffffff; }
     </style>
   {{ else }}
     <style>
       body { background: #fff; color: #333; font-family: sans-serif; padding: 5% 10%; line-height: 1.6; }
-      a { color: #0066cc; }
+      a { color: #0066cc; text-decoration: none; margin-right: 15px; }
+      nav { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
     </style>
   {{ end }}
 </head>
 <body>
+  <!-- Вывод меню навигации в самом верху -->
+  {{ partial "nav.html" . }}
+
   <header>
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
   </header>
+  
   {{ block "main" . }}{{ end }}
 </body>
 </html>
