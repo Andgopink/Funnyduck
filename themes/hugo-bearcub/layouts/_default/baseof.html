@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ if eq .Site.Params.color_theme "dark" }}
+    <style>
+      body { background: #1f1b29; color: #f4f4f4; font-family: sans-serif; padding: 5% 10%; line-height: 1.6; }
+      a { color: #ff79c6; }
+    </style>
+  {{ else }}
+    <style>
+      body { background: #fff; color: #333; font-family: sans-serif; padding: 5% 10%; line-height: 1.6; }
+      a { color: #0066cc; }
+    </style>
+  {{ end }}
+</head>
+<body>
+  <header>
+    <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
+  </header>
+  {{ block "main" . }}{{ end }}
+</body>
+</html>
