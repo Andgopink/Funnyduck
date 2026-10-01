@@ -1,0 +1,7 @@
+{{ if .Site.Menus.main }}
+<nav>
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relLangURL }}"{{ if or (eq $.RelPermalink .URL) (eq $.Section .Identifier) }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+</nav>
+{{ end }}
