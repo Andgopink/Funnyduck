@@ -1,0 +1,26 @@
+name = "Bear Cub"
+license = "MIT"
+licenselink = "https://github.com"
+description = "A lightweight Hugo theme based on Bear Blog and Hugo Bear Blog. It is free, multilingual, optimized for search engines, no-nonsense, responsive, light, and fast. Really fast."
+homepage = "https://github.com"
+background = "#1f1b29"
+demosite = "https://github.io"
+
+[params]
+color_theme = "dark"
+
+tags = ["blog", "responsive", "minimal", "personal", "dark", "multilingual"]
+features = ["favicon", "seo", "no javascript", "rss", "social cards"]
+
+[author]
+    name = "Caio Lente"
+    homepage = "https://lente.dev"
+
+[original]
+    author = "Jan Raasch"
+    homepage = "https://janraasch.com"
+    repo = "https://github.com"
+
+[module]
+  [module.hugoVersion]
+    min = "0.90"
