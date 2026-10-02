@@ -20,15 +20,37 @@
       nav { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
     </style>
   {{ end }}
+
+  <style>
+    .site-header {
+      text-align: center;
+      padding: 20px 0 25px 0;
+      margin-bottom: 10px;
+    }
+    .site-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin: 0;
+      color: #ff79c6;
+      text-decoration: none;
+    }
+    .site-title a { color: #ff79c6; }
+    .site-title a:hover { text-decoration: none; }
+    @media (max-width: 600px) {
+      .site-title { font-size: 1.8rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Вывод меню навигации в самом верху -->
+  <!-- Название станции: над меню, по центру, крупным шрифтом -->
+  <header class="site-header">
+    <h1 class="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  </header>
+
+  <!-- Вывод меню навигации -->
   {{ partial "nav.html" . }}
 
-  <header>
-    <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
-  </header>
-  
   {{ block "main" . }}{{ end }}
 </body>
 </html>
